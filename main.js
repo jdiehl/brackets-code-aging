@@ -30,7 +30,8 @@ define(function (require, exports, module) {
 
 	// Brackets modules
 	var EditorManager   = brackets.getModule("editor/EditorManager"),
-		DocumentManager = brackets.getModule("document/DocumentManager");
+		DocumentManager = brackets.getModule("document/DocumentManager"),
+		AppInit         = brackets.getModule("utils/AppInit");
 
 	var AgeTracker = require("AgeTracker");
 
@@ -53,7 +54,7 @@ define(function (require, exports, module) {
 	function init() {
 		loadCSS();
 		$(DocumentManager).on("currentDocumentChange", onCurrentDocumentChange);
-		brackets.ready(onCurrentDocumentChange);
+		AppInit.appReady(onCurrentDocumentChange);
 	}
 
 	function unload() {
