@@ -54,8 +54,9 @@ define(function (require, exports, module) {
 		// set the age of a line by updating the age counter and the editor appearance
 		setLineAge: function (line, age) {
 			if (this.age[line] !== age) {
+				this.editor._codeMirror.removeLineClass(line, _classForAge(this.age[line]));
 				this.age[line] = age;
-				this.editor._codeMirror.setLineClass(line, _classForAge(age));
+				this.editor._codeMirror.addLineClass(line, "bgClass", _classForAge(age));
 				this.save();
 			}
 		},
@@ -86,7 +87,7 @@ define(function (require, exports, module) {
 			this.editor._codeMirror.operation(function () {
 				var lineCount = self.editor.lineCount();
 				for (var line = 0; line < lineCount; line++) {
-					self.editor._codeMirror.setLineClass(line, _classForAge(self.age[line]));
+					self.editor._codeMirror.addLineClass(line, "bgClass", _classForAge(self.age[line]));
 				}
 			});
 		},

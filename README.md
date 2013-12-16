@@ -7,11 +7,12 @@ no need to disturb it!
 
 ## Install
 
-The easiest way to install Code Aging is via the Extension Manager:
+This is extension is still experimental and should not be used in production settings. To try it out, you can install it manually by following these steps:
 
-    https://github.com/jdiehl/brackets-extension-manager
-
-To install it manually, clone this repo into the user folder inside the extenions folder of Brackets.
+1. Start Brackets
+2. Reveal the Brackets extensions folder from the Help menu
+3. Clone this repository into the revealed folder
+4. Restart Brackets
 
 ## Known Bugs
 
