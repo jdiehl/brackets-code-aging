@@ -5,9 +5,19 @@ with a green background, making those new lines of code that typically contain 9
 your newly introduced bugs very prominent. Think of grass growing over your mature code -
 no need to disturb it!
 
+![Demo](https://raw.github.com/jdiehl/brackets-code-aging/master/demo.gif)
+
+Thanks to [cloudduelling](https://github.com/clouddueling) for the illustration.
+
 ## Install
 
-This is extension is still experimental and should not be used in production settings. To try it out, you can install it manually by following these steps:
+Important: This is extension is still experimental and should not be used in production settings.
+
+To install code-aging via the built-in extension manager, open it in Brackets, click "Install from URL...", and paste the URL below into the text field:
+
+    https://github.com/jdiehl/brackets-code-aging.git
+
+Alternatively, the extension can be installed manually by following the steps below:
 
 1. Start Brackets
 2. Reveal the Brackets extensions folder from the Help menu
@@ -16,7 +26,7 @@ This is extension is still experimental and should not be used in production set
 
 ## Known Bugs
 
-This extension is in early beta stage. Inserting or deleting lines will as well as not saving your document will break things.
+This extension is in early beta stage. Inserting and deleting lines and saving the document will probably break things.
 
 ## License
 
